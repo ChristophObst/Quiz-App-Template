@@ -10,4 +10,10 @@ bookmarkButton.addEventListener("click", () => {
 
 answerButton.addEventListener("click", () => {
 answer.classList.toggle("card__answer--active");
+answerButton.textContent = "Show answer";
+if (answer.classList.contains("card__answer--active")) {
+  answerButton.textContent = "Hide answer";
+}
 });
+
+
